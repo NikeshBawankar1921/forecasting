@@ -23,7 +23,7 @@ This is a *Weather Forecast Application* built using *HTML, Tailwind CSS, and Ja
 ---
 
 ## 🎨 UI Preview  
-👉 [App Preview](image.png)
+👉 [alt text](image.png)
 ---
 
 ## 🛠️ Technologies Used
