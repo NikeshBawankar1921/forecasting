@@ -15,12 +15,12 @@
 
         <div class="bg-white/30 backdrop-blur-md shadow-lg rounded-3xl p-6 ">
             
-            <ul class="flex  gap-6 m-0 justify-center">
+            <ul class="flex  gap-6 m-0 justify-evenly">
 
-                <li class="p-1 px-2 py-1 text-white rounded-lg shadow-md" id="#"> HOME </li>
-                <li class="p-1 px-2 py-1 text-white rounded-lg shadow-md" id="#"> ABOUT</li>
-                <li class="p-1 px-2 py-1  text-white rounded-lg shadow-md" id="#"> CONTACT</li>
-                <li class="p-1 px-2 py-1  text-white rounded-lg shadow-md" id="#"> SETTING</li>
+                 <a href="#" class="p-1 px-4 py-1 bg-blue-500 text-white rounded-lg shadow-md"> HOME</a> 
+                <a class="p-1 px-4 py-1 bg-blue-500 text-white rounded-lg shadow-md"  href="#"> ABOUT</a> 
+                <a class="p-1 px-4 py-1 bg-blue-500 text-white rounded-lg shadow-md"  href="#"> CONTACT</a> 
+                <a class="p-1 px-4 py-1 bg-blue-500 text-white rounded-lg shadow-md"  href="#"> SETTING</a> 
             </ul>
         </div>
         <br>
@@ -29,7 +29,7 @@
             <input id="cityInput" type="text" placeholder="Enter city name"
                 class="p-3 w-full rounded-lg shadow-md bg-white/30 backdrop-blur-md text-gray-800">
             <button id="searchBtn" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md">Search</button>
-            <button id="locationBtn" class="px-4 py-2 bg-green-600 text-white rounded-lg shadow-md">📍</button>
+            <button id="locationBtn" class="px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md">📍</button>
         </div>
         <div class="relative">
             <select id="recentCities" class="w-full p-3 rounded-lg shadow-md hidden bg-white/90"></select>
@@ -74,13 +74,15 @@
 
         <!-- Error Message -->
         <p id="errorMsg" class="text-red-600 text-center mt-4 hidden"></p>
+        
+        <!--Footer-->
         <footer class="bg-white/30 backdrop-blur-md shadow-lg rounded-3xl p-6 ">
 
             <ul class="flex  gap-6 m-0 justify-center size-0.5">
-                <li class="p-1 fa-brands fa-linkedin"> </li><p>LinkedIn</p>
-                <li class="p-1 fa-brands fa-facebook"> </li><p>Facebook</p>
-                <li class="p-1 fa-brands fa-twitter"> </li><p>Twitter</p>
-                <li class="p-1 fa-brands fa-youtube"> </li><p>Youtube</p>
+                <li class="p-1 fa-brands fa-linkedin"> </li><p class="text-gray-600">LinkedIn</p>
+                <li class="p-1 fa-brands fa-facebook"> </li><p class="text-gray-600">Facebook</p>
+                <li class="p-1 fa-brands fa-twitter"> </li><p class="text-gray-600">Twitter</p>
+                <li class="p-1 fa-brands fa-youtube"> </li><p class="text-gray-600">Youtube</p>
             </ul>
         </footer>
     </div>
