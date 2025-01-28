@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-b from-blue-400 to-gray-200 min-h-screen flex justify-center items-center">
+
+    <div class="w-full max-w-4xl p-6">
+        <!-- Current Weather Section -->
+        <div class="bg-white/30 backdrop-blur-md shadow-lg rounded-3xl p-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800">Current Weather</h2>
+                    <p class="text-lg text-gray-600 mt-1">Sunny</p>
+                </div>
+                <div class="text-5xl text-yellow-500">☀️</div>
+            </div>
+            <div class="flex justify-between items-center mt-4">
+                <p class="text-6xl font-bold text-gray-800">35°C</p>
+                <p class="text-gray-600">Humidity: <span class="font-semibold">20%</span></p>
+            </div>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="grid grid-cols-3 gap-4 mt-6">
+            <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                <p class="text-2xl font-semibold text-gray-800">39°C</p>
+                <p class="text-gray-600">Temperature</p>
+            </div>
+            <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                <p class="text-2xl font-semibold text-gray-800">39%</p>
+                <p class="text-gray-600">Humidity</p>
+            </div>
+            <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                <p class="text-2xl font-semibold text-gray-800">29°C</p>
+                <p class="text-gray-600">Wind Speed</p>
+            </div>
+        </div>
+
+        <!-- Forecast Section -->
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold text-gray-800">Weekly Forecast</h3>
+            <div class="grid grid-cols-4 gap-4 mt-4">
+                <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                    <p class="text-3xl">☁️</p>
+                    <p class="text-gray-600">Cloudy</p>
+                    <p class="text-2xl font-semibold text-gray-800">29°C</p>
+                </div>
+                <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                    <p class="text-3xl">🌦️</p>
+                    <p class="text-gray-600">Rainy</p>
+                    <p class="text-2xl font-semibold text-gray-800">28°C</p>
+                </div>
+                <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                    <p class="text-3xl">⛅</p>
+                    <p class="text-gray-600">Partly Sunny</p>
+                    <p class="text-2xl font-semibold text-gray-800">30°C</p>
+                </div>
+                <div class="bg-white/30 backdrop-blur-md shadow-md p-4 rounded-xl text-center">
+                    <p class="text-3xl">☀️</p>
+                    <p class="text-gray-600">Sunny</p>
+                    <p class="text-2xl font-semibold text-gray-800">32°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
