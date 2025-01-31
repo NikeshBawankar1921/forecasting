@@ -18,7 +18,7 @@ This is a *Weather Forecast Application* built using *HTML, Tailwind CSS, and Ja
 ---
 
 ## 🚀 Live Demo  
-👉 [https://nikeshbawankar1921.github.io/weather-forecasting/]
+👉 [https://nikeshbawankar1921.github.io/forecasting/]
 
 ---
 

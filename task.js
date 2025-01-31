@@ -5,7 +5,7 @@ const locationBtn = document.getElementById("locationBtn");
 const cityInput = document.getElementById("cityInput");
 const errorMsg = document.getElementById("errorMsg");
 const recentCities = document.getElementById("recentCities");
-
+var h=0;
 // ✅ Log to check if JS is running
 console.log("Script loaded successfully");
 
@@ -71,11 +71,12 @@ const getWeatherIcon = (condition) => {
 const saveRecentCity = (city) => {
     let cities = JSON.parse(localStorage.getItem("recentCities")) || [];
     if (!cities.includes(city)) {
-        cities.unshift(city);
-        if (cities.length > 5) cities.pop();
+        cities.unshift(city);}
+        if (cities.length > 5) {cities.pop();
         localStorage.setItem("recentCities", JSON.stringify(cities));
     }
-    updateRecentCities();
+    if(h=0){
+    updateRecentCities();}
 };
 
 const updateRecentCities = () => {
@@ -85,13 +86,14 @@ const updateRecentCities = () => {
 };
 
 // ✅ Search by city name
-searchBtn.addEventListener("click", () => {
+searchBtn.addEventListener("click", () => { h=0;
     if (!cityInput.value.trim()) {
         errorMsg.innerText = "Please enter a city name!";
         errorMsg.classList.remove("hidden");
     } else {
         fetchWeather(cityInput.value.trim());
     }
+    updateRecentCities();
 });
 
 // ✅ Get current location weather
@@ -110,3 +112,10 @@ locationBtn.addEventListener("click", () => {
 
 // ✅ Load recent cities on page load
 updateRecentCities();
+
+if(recentCities.addEventListener){
+    h=1;
+    recentCities.addEventListener("change",(event)=>{pop(event.target.value)})
+    recentCities.addEventListener("change",(event)=>{fetchWeather(event.target.value)})
+    
+}
