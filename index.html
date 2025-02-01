@@ -16,13 +16,14 @@
 
         <div class="bg-white/30 backdrop-blur-md shadow-lg rounded-3xl p-6 ">
 
-            <ul class="flex  gap-6 m-0 justify-evenly">
+            <ul class="flex  gap-6 m-0 justify-center ">
 
+                <a class="p-1 bg-gray-100 text-gray-600 rounded-lg shadow-md" href="#">HOME</a>
+                <a class="p-1 bg-gray-100 text-gray-600 rounded-lg shadow-md" href="#">ABOUT</a>
+                <a class="p-1 bg-gray-100 text-gray-600 rounded-lg shadow-md" href="#">CONTACT</a>
+                <a class="p-1 bg-gray-100 text-gray-600 rounded-lg shadow-md" href="#">SETTING</a>
                 
-                <a href="#" class="p-1 px-2 py-1 bg-gray-100 text-black rounded-lg shadow-md hover:bg-blue-500"> HOME</a> 
-                <a class="p-1 px-2 py-1 bg-gray-100 text-black rounded-lg shadow-md" href="#"> ABOUT</a>
-                <a class="p-1 px-2 py-1 bg-gray-100 text-black rounded-lg shadow-md" href="#"> CONTACT</a>
-                <a class="p-1 px-2 py-1 bg-gray-100 text-black rounded-lg shadow-md" href="#"> SETTING</a>
+
 
             </ul>
         </div>
@@ -34,10 +35,17 @@
             <button id="searchBtn" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md">Search</button>
             <button id="locationBtn" class="px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md">📍</button>
         </div>
+        
+
         <div class="relative">
             <select id="recentCities" class="w-full p-3 rounded-lg shadow-md hidden bg-white/90"></select>
         </div>
         <br>
+
+        <div class="flex bg-white/30 backdrop-blur-md shadow-lg rounded-3xl p-6 ">
+            <p class="text-gray-600" >Currnt City Data : <p id="currentcity"> None </p> </p>   
+    </div>
+    <br>
         <!-- Current Weather Section -->
         <div class="bg-white/30 backdrop-blur-md shadow-lg rounded-3xl p-6">
             <div class="flex justify-between items-center">
